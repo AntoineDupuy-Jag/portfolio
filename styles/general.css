@@ -1,0 +1,50 @@
+/*------------------
+|      GENERAL      |
+-------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:hover::before {
+  opacity: 0.8;
+  animation: linkHover 1s ease forwards;
+}
+
+@keyframes linkHover {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

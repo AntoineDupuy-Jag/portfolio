@@ -1,0 +1,156 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:hover::before {
+  opacity: 0.8;
+  animation: linkHover 1s ease forwards;
+}
+
+@keyframes linkHover {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+/*-----------------
+|      NAVBAR      |
+------------------*/
+
+/* .navbar-container {
+  position: sticky;
+  top: 0;
+  padding: 12px 0 12px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  list-style: none;
+}
+
+nav ul li:last-child {
+  margin-right: 6rem;
+} */
+
+/*---------------
+|      HOME      |
+----------------*/
+
+#home {
+  background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+}
+
+.home-content {
+  display: flex;
+  height: calc(100% - 64px);
+}
+
+.home-left {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-left div {
+  color: white;
+}
+
+.home-left h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+.home-left p {
+  margin-top: 20px;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+}
+
+.svg-background {
+  position: absolute;
+  top: -2px;
+  left: -10px;
+}
+
+.svg-text {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  margin-left: 18px;
+  color: #383838;
+}
+
+.home-right img {
+  width: 60%;
+}
+
+/*---------------------
+|      BACKGROUND      |
+----------------------*/
+
+/* #background {
+} */
