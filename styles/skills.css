@@ -7,6 +7,15 @@
   background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
 }
 
+.skills-container {
+  /* height: 82%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* --- TITLE --- */
+
 .skills-title {
   position: relative;
   width: fit-content;
@@ -19,7 +28,6 @@
 .skills-title::before {
   content: '';
   position: absolute;
-  /* z-index: -1; */
   height: 8px;
   width: 70%;
   bottom: -2px;
@@ -28,36 +36,108 @@
   background: white;
 }
 
-.skills-wrapper {
+/* --- TOP --- */
+
+.skills-top {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
 }
 
 .skills-box {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
+.skills-box div {
+  width: 50%;
+}
+
+.skills-box-picture {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .skills-logo-background {
   width: 180px;
   height: 180px;
-  margin-right: 12px;
 }
 
 .skills-logo {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   position: absolute;
   top: 50%;
-  left: 34px;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-22%, -50%);
 }
 
 .skills-box h2 {
   font-weight: 900;
-  text-shadow: 1px 1px 1px black;
+  background-color: #383838;
+  padding: 6px 18px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+/* --- BOTTOM --- */
+
+.skills-bottom {
+  margin: 2rem auto;
+  background-color: #383838;
+  border-radius: 20px;
+  color: white;
+  padding: 1.5rem;
+  width: fit-content;
+}
+
+.skills-bottom h2 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  display: flex;
+}
+
+.skills-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+  background-color: #383838;
+  border-radius: 10px;
+  box-shadow: -1rem 0 2rem black;
+  width: 100px;
+  overflow: hidden;
+}
+
+.skills-item img {
+  width: 72px;
+  height: 72px;
+  margin-right: 16px;
+}
+
+.skills-item p {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.skills-item:hover {
+  animation: showItemLabel 1s ease forwards;
+}
+
+@keyframes showItemLabel {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 230px;
+  }
 }
