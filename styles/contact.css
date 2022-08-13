@@ -1,38 +1,37 @@
-/*---------------------
-|      BACKGROUND      |
-----------------------*/
+/*------------------
+|      CONTACT      |
+-------------------*/
 
-#realisations {
-  height: 100vh;
+#contact {
+  height: calc(100vh / 2);
   padding: 2rem 3rem;
+  background-image: linear-gradient( 360deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
 }
 
-.realisation-container {
+.contact-container {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
 }
 
 /* --- TITLE --- */
 
-.realisations-title {
+.contact-title {
   position: relative;
   width: fit-content;
   margin: 0 auto;
   font-size: 3rem;
   font-weight: 900;
-  color: #383838;
+  color: white;
 }
 
-.realisations-title::before {
+.contact-title::before {
   content: '';
   position: absolute;
-  z-index: -1;
   height: 8px;
   width: 70%;
   bottom: -2px;
   left: 50%;
   transform: translate(-50%);
-  background: linear-gradient(90deg, rgba(249,151,119,1) 0%, rgba(98,58,162,1) 100%);
+  background-color: white;
 }

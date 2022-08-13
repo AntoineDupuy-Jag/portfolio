@@ -35,6 +35,31 @@ a:hover::before {
   animation: linkHover 1s ease forwards;
 }
 
+.page-transition {
+  height: 100px;
+  width: 100%;
+}
+
+.page-transition-1 {
+  clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+  background-color: #f59478;
+}
+
+.page-transition-2 {
+  clip-path: polygon(100% 0%, 100.1% 100%, 0% 100%);
+  background-color: #f99777;
+}
+
+.page-transition-3 {
+  clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+  background-color: #653ca0;
+}
+
+.page-transition-4 {
+  clip-path: polygon(100% 0%, 100.1% 100%, 0% 100%);
+  background-color: #653ca0;
+}
+
 @keyframes linkHover {
   0% {
     width: 0;
