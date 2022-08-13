@@ -5,7 +5,13 @@
 #background {
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
+}
+
+.background-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .background-top, .background-bottom {
@@ -17,7 +23,7 @@
 .background-title {
   position: relative;
   width: fit-content;
-  margin: 2.5rem auto;
+  margin: 0 auto 30px auto;
   font-size: 3rem;
   font-weight: 900;
   color: #383838;
@@ -38,29 +44,57 @@
 /* --- TOP --- */
 
 .background-top {
-  height: 30%;
+  height: 40%;
 }
 
-.top-left, .top-right {
-  height: 100%;
+.background-top-left, .background-top-right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.top-left {
-  flex: 1
+.background-top-left {
+  flex: 1;
+  background-image: url('/svg/resume-cv.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  transform: rotateZ(-10deg) scale(0.8) translateY(8%);
 }
 
-.top-right {
+.background-top-left img {
+  width: 50%;
+  height: 100%;
+}
+
+.background-top-right {
   flex: 2;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #383838;
+}
+
+.background-top-right span {
+  font-weight: bold;
+}
+
+.background-top-right a {
+  color: #623aa2;
+  text-decoration: underline;
+}
+
+.background-top-right a:hover {
+  opacity: 0.6;
 }
 
 /* --- BOTTOM --- */
 
 .background-bottom {
-  height: 50%;
+  height: 60%;
   align-items: center;
 }
 
@@ -71,8 +105,8 @@
 
 .box {
   position: relative;
-  height: 80%;
   width: calc(80% / 4);
+  height: 80%;
   padding: 1rem;
   border-radius: 20px;
   text-align: center;
