@@ -60,6 +60,17 @@ a:hover::before {
   background-color: #653ca0;
 }
 
+.footer {
+  padding: .8rem;
+  background-color: #383838;
+  color: white;
+}
+
+.footer span {
+  color: crimson;
+  font-weight: bold;
+}
+
 @keyframes linkHover {
   0% {
     width: 0;
