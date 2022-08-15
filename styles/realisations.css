@@ -7,11 +7,79 @@
   padding: 2rem 3rem;
 }
 
-.realisation-container {
+.realisations-container {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  justify-content: space-between;
+}
+
+.realisations-top, .realisations-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40%;
+}
+
+.realisations-top-carousel, .realisations-bottom-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #383838;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 3px #ddd;
+  padding: 1rem;
+}
+
+/* .realisations-top-carousel */
+
+.realisations-top-carousel::before, .realisations-bottom-carousel::before {
+  position: absolute;
+  top: -38px;
+  background: -webkit-linear-gradient(360deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.realisations-top-carousel img, .realisations-bottom-carousel img {
+  height: 20%;
+}
+
+.realisations-top-carousel img:not(:first-child, :last-child), .realisations-bottom-carousel img:not(:first-child, :last-child) {
+  height: 100%;
+}
+
+.realisations-top-text, .realisations-bottom-text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: .6rem;
+  color: #383838;
+}
+
+.realisations-top-text span, .realisations-bottom-text span {
+  font-weight: bold;
+}
+
+.realisations-top-text p:first-child, .realisations-bottom-text p:first-child {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.realisations-top-text a, .realisations-bottom-text a {
+  width: fit-content;
+  color: #623aa2;
+}
+
+.realisations-top-text a:hover, .realisations-bottom-text a:hover {
+  opacity: 0.6;
 }
 
 /* --- TITLE --- */
@@ -28,11 +96,28 @@
 .realisations-title::before {
   content: '';
   position: absolute;
-  z-index: -1;
   height: 8px;
   width: 70%;
   bottom: -2px;
   left: 50%;
   transform: translate(-50%);
   background: linear-gradient(90deg, rgba(249,151,119,1) 0%, rgba(98,58,162,1) 100%);
+}
+
+/* --- TOP --- */
+
+.realisations-top-carousel::before {
+  content: "SportEasy web-app";
+  left: 20px;
+}
+
+/* --- BOTTOM --- */
+
+.realisations-bottom {
+  flex-direction: row-reverse;
+}
+
+.realisations-bottom-carousel::before {
+  content: "Darts scoring app";
+  right: 20px;
 }
