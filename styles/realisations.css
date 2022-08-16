@@ -1,6 +1,6 @@
-/*---------------------
-|      BACKGROUND      |
-----------------------*/
+/*-----------------------
+|      REALISATIONS      |
+------------------------*/
 
 #realisations {
   height: 100vh;
@@ -21,39 +21,6 @@
   justify-content: space-between;
   width: 100%;
   height: 40%;
-}
-
-.realisations-top-carousel, .realisations-bottom-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  background-color: #383838;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px 3px #ddd;
-  padding: 1rem;
-}
-
-/* .realisations-top-carousel */
-
-.realisations-top-carousel::before, .realisations-bottom-carousel::before {
-  position: absolute;
-  top: -38px;
-  background: -webkit-linear-gradient(360deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 3rem;
-  font-weight: 900;
-}
-
-.realisations-top-carousel img, .realisations-bottom-carousel img {
-  height: 20%;
-}
-
-.realisations-top-carousel img:not(:first-child, :last-child), .realisations-bottom-carousel img:not(:first-child, :last-child) {
-  height: 100%;
 }
 
 .realisations-top-text, .realisations-bottom-text {
@@ -104,6 +71,74 @@
   background: linear-gradient(90deg, rgba(249,151,119,1) 0%, rgba(98,58,162,1) 100%);
 }
 
+/* --- CAROUSEL --- */
+
+.realisations-top-carousel, .realisations-bottom-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #383838;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 3px #ddd;
+  padding: 1rem;
+}
+
+#carousel-container {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-img {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.carousel-button {
+  width: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#carousel-button-left {
+  margin-right: 1rem;
+}
+
+#carousel-button-right {
+  margin-left: 1rem;
+}
+
+.carousel-button:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.realisations-top-carousel::before, .realisations-bottom-carousel::before {
+  position: absolute;
+  top: -38px;
+  background: -webkit-linear-gradient(360deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* .realisations-top-carousel img, .realisations-bottom-carousel img {
+  height: 20%;
+  margin: 8px;
+}
+
+.realisations-top-carousel img:not(:first-child, :last-child), .realisations-bottom-carousel img:not(:first-child, :last-child) {
+  height: 100%;
+  border-radius: 5px;
+} */
+
 /* --- TOP --- */
 
 .realisations-top-carousel::before {
@@ -120,4 +155,8 @@
 .realisations-bottom-carousel::before {
   content: "Darts scoring app";
   right: 20px;
+}
+
+.realisations-bottom-text {
+  text-align: end;
 }

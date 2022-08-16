@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <script type="module" src="main.js" defer></script>
+    <script src="main.js" defer></script>
     <title>Qoophee's website</title>
   </head>
   <body>
@@ -215,10 +215,10 @@
       <div class="realisations-container">
         <h1 class="realisations-title">Realisations</h1>
         <div class="realisations-top">
-          <div class="realisations-top-carousel">
-            <img src="/svg/chevron-left.svg">
-            <img src="/realisations/SE/se-hometeam.png">
-            <img src="/svg/chevron-right.svg">
+          <div class="realisations-top-carousel" id="carousel">
+            <img src="/svg/chevron-left.svg" class="carousel-button" id="carousel-button-left" onclick="translateCarouselLeft()">
+            <div id="carousel-container"></div>
+            <img src="/svg/chevron-right.svg" class="carousel-button" id="carousel-button-right" onclick="translateCarouselRight()">
           </div>
           <div class="realisations-top-text">
             <p>Travail réalisé chez SportEasy</p>
@@ -229,15 +229,15 @@
         </div>
         <div class="realisations-bottom">
           <div class="realisations-bottom-carousel">
-            <img src="/svg/chevron-left.svg">
+            <!-- <img src="/svg/chevron-left.svg">
             <img src="/realisations/DSA/dsa-home.png">
-            <img src="/svg/chevron-right.svg">
+            <img src="/svg/chevron-right.svg"> -->
           </div>
           <div class="realisations-bottom-text">
             <p>Projet personnel réalisé en autonomie, from scratch.</p>
             <p>Application conçue à l'aide de ReactJs, TypeScript, Sass, et un minimum de librairies pour garder la main sur le design et l'adaptabilité des composants.</p>
             <p>C'est un assistant de parties de fléchettes, qui permet de sélectionner ses règles, paramétrer les équipes, décompter les scores en direct au fur et à mesure, et propose des statistiques en fin de partie</p>
-            <a href="#" target="_blank">➜ Voir le projet</a>
+            <p><a href="#" target="_blank">➜ Voir le projet</a></p>
           </div>
         </div>
       </div>
