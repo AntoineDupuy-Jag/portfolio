@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Qoophee's website</title>
   </head>
   <body>
@@ -215,13 +215,30 @@
       <div class="realisations-container">
         <h1 class="realisations-title">Realisations</h1>
         <div class="realisations-top">
-          <div class="realisations-top-carousel" id="carousel">
-            <img src="/svg/chevron-left.svg" class="carousel-button" id="carousel-button-left" onclick="translateCarouselLeft()">
-            <div id="carousel-container"></div>
-            <img src="/svg/chevron-right.svg" class="carousel-button" id="carousel-button-right" onclick="translateCarouselRight()">
+          <div class="realisations-top-carousel">
+            <!-- carousel -->
+            <div class="carousel-container" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">➜</button>
+              <button class="carousel-button next" data-carousel-button="next">➜</button>
+              <ul data-slides>
+                <li class="carousel-slide" data-active>
+                  <img src="/realisations/SE/se-img1.png" alt="illustration SportEasy #1">
+                </li>
+                <li class="carousel-slide">
+                  <img src="/realisations/SE/se-img2.png" alt="illustration SportEasy #2">
+                </li>
+                <li class="carousel-slide">
+                  <img src="/realisations/SE/se-img3.png" alt="illustration SportEasy #3">
+                </li>
+                <li class="carousel-slide">
+                  <img src="/realisations/SE/se-img4.png" alt="illustration SportEasy #4">
+                </li>
+              </ul>
+            </div>
+            <!-- eo carousel -->
           </div>
           <div class="realisations-top-text">
-            <p>Travail réalisé chez SportEasy</p>
+            <p>Travail réalisé chez SportEasy.</p>
             <p><span>HomeTeam ➜</span> refonte complète de la page d'accueil des équipes. Création de nouveaux composants, mise à jour de composants existants, responsive design, intégration des maquettes Zeplin.</p>
             <p><span>Page des présences ➜</span> création d'une feature récapitulant les présences et la participations des joueurs aux divers évènements, matchs et tâches de l'équipe. Réflexion avec les développeurs back-end autour des nouvelles routes de l'API à déployer, création d'onglets, gestion et tri des colonnes, création de fixtures pour le développment, etc...</p>
             <a href="#" target="_blank">➜ Découvrir la web-app SportEasy</a>
@@ -229,9 +246,20 @@
         </div>
         <div class="realisations-bottom">
           <div class="realisations-bottom-carousel">
-            <!-- <img src="/svg/chevron-left.svg">
-            <img src="/realisations/DSA/dsa-home.png">
-            <img src="/svg/chevron-right.svg"> -->
+            <!-- carousel -->
+            <div class="carousel-container" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">➜</button>
+              <button class="carousel-button next" data-carousel-button="next">➜</button>
+              <ul data-slides>
+                <li class="carousel-slide bottom" data-active>
+                  <img src="/realisations/DSA/dsa-home.png" alt="illustration DartsScoringApp #1">
+                </li>
+                <li class="carousel-slide bottom">
+                  <img src="/realisations/DSA/dsa-scores.png" alt="illustration DartsScoringApp #2">
+                </li>
+              </ul>
+            </div>
+            <!-- eo carousel -->
           </div>
           <div class="realisations-bottom-text">
             <p>Projet personnel réalisé en autonomie, from scratch.</p>
@@ -246,7 +274,6 @@
     <!------ CONTACT ------>
     <div id="contact">
       <div class="contact-container">
-        <!-- <h1 class="contact-title">Contact</h1> -->
         <div class="contact-content">
           <div class="contact-column contact-column-left">
             <div class="contact-column-left-item">
@@ -285,6 +312,6 @@
         </div>
       </div>
     </div>
-    <div class="footer">Made by <span>Qoophee©</span> aka Antoine DUPUY - 2022</div>
+    <div class="footer">Made by <span>Qoophee©</span> aka Antoine DUPUY - 2021 / 2022</div>
   </body>
 </html>
