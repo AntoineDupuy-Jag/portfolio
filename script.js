@@ -16,3 +16,14 @@ buttons.forEach((button) => {
 		delete activeSlide.dataset.active;
 	});
 });
+
+// --- Pop-up image ---
+
+const images = document.querySelectorAll('carousel-slide img');
+
+images.forEach((image) => {
+	image.onClick = () => {
+		document.querySelector('popup-img').style.display = 'block';
+		console.log('HELLO');
+	};
+});
