@@ -177,3 +177,7 @@
 .box p {
   margin: auto;
 }
+
+.box span {
+  font-weight: bold;
+}

@@ -19,11 +19,17 @@ buttons.forEach((button) => {
 
 // --- Pop-up image ---
 
-const images = document.querySelectorAll('carousel-slide img');
+const images = document.querySelectorAll('.carousel-container img');
 
 images.forEach((image) => {
-	image.onClick = () => {
-		document.querySelector('popup-img').style.display = 'block';
-		console.log('HELLO');
+	image.onclick = () => {
+		document.querySelector('.popup-img').style.display = 'block';
+		document.querySelector('.popup-img img').src = image.closest('.realisations-top-carousel')
+			? document.querySelector('[data-active] img').getAttribute('src')
+			: document.querySelector('.realisations-bottom-carousel [data-active] img').getAttribute('src');
 	};
 });
+
+document.querySelector('.popup-img span').onclick = () => {
+	document.querySelector('.popup-img').style.display = 'none';
+};
