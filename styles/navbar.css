@@ -2,16 +2,19 @@
 |      NAVBAR      |
 ------------------*/
 
-.navbar-container {
-  position: sticky;
+.navbar {
+  position: fixed;
+  z-index: 10;
   top: 0;
   padding: 12px 0 12px 12px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
   font-weight: 700;
   font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 .navbar-left {
@@ -35,4 +38,34 @@ nav ul {
 
 nav ul li:last-child {
   margin-right: 5rem;
+}
+
+/* --- Sticky --- */
+
+.navbar.sticky {
+  background-color: hsl(0, 0%, 12%);
+  padding: 4px 0 4px 4px;
+}
+
+.navbar.navbar.sticky img {
+  visibility: hidden;
+}
+
+.navbar.sticky span {
+  background: linear-gradient(90deg, hsl(15, 92%, 72%) -2.1%, hsl(263, 47%, 53%) 90%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar.navbar.sticky a::before {
+  content: none;
+}
+
+.navbar.sticky a:hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, hsl(15, 92%, 82%) -2.1%, hsl(263, 47%, 63%) 90%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

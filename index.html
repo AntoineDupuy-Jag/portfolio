@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/preloader.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/background.css">
@@ -18,20 +19,25 @@
     <title>Qoophee's website</title>
   </head>
   <body>
+    <!--- PRELOADER --->
+    <div class="preloader">
+      <h1>Qoophee's Portfolio</h1>
+      <div class="spinner"></div>
+    </div>
     <!------- HOME ------>
     <section id="home">
-      <div class="navbar-container">
+      <div class="navbar">
         <div class="navbar-left">
-          <img src="png/AD-icon.png" class="navbar-logo" alt="logo" />
-          <span>This is my website</span>
+          <img src="general-assets/AD-icon.png" class="navbar-logo" alt="logo">
+          <span>Qoophee's Portfolio.</span>
         </div>
         <nav>
           <ul>
-            <li><a href="#home">ACCUEIL</a></li>
-            <li><a href="#background">PARCOURS</a></li>
-            <li><a href="#skills">COMPÉTENCES</a></li>
-            <li><a href="#realisations">RÉALISATIONS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#background">Parcours</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -41,7 +47,7 @@
             <h1>My name is Antoine Dupuy...</h1>
             <h1>and I'm
               <span class="svg-container">
-                <img src="svg/background-text.svg" class="svg-background" />
+                <img src="general-assets/background-text.svg" class="svg-background">
                 <span class="svg-text">front-end developer</span>
               </span>
             </h1>
@@ -49,12 +55,12 @@
           </div>
         </div>
         <div class="home-right">
-          <img src="svg/developer_activity.svg"/>
+          <img src="/general-assets/developer_activity.svg" alt="Main illustration : developer on his computer">
         </div>
       </div>
     </section>
     <div class="page-transition page-transition-1"></div>
-    <!------ MY BACKGROUND ------>
+    <!------ BACKGROUND ------>
     <section id="background">
       <div class="background-container">
         <h1 class="background-title">Mon parcours</h1>
@@ -94,24 +100,24 @@
         <div class="skills-top">
           <div class="skills-top-left">
             <div class="skills-top-left-item">
-              <img src="/skills/code-slash.svg" />
+              <img src="/skills/code-slash.svg">
               <div>
                 <h2>Développement & technologies</h2>
                 <p>API Rest ‧ Clean code ‧ Veille technologique ‧ Respect des normes</p>
               </div>
             </div>
             <div class="skills-top-left-item">
-              <img src="/skills/people-fill.svg" />
-              <div class="">
+              <img src="/skills/people-fill.svg">
+              <div>
                 <h2>Travail d'équipe</h2>
                 <p>Méthode Agile et Scrum ‧ Communication ‧ Esprit d'équipe</p>
               </div>
             </div>
             <div class="skills-top-left-item">
-              <img src="/skills/brush.svg" />
-              <div class="">
+              <img src="/skills/brush.svg">
+              <div>
                 <h2>Design & responsive</h2>
-                <p>Maquettage ‧ Breakpoints ‧ Composants adaptables ‧ Animations</p>
+                <p>Maquettage ‧ Breakpoints ‧ Préprocesseurs CSS ‧ Animations</p>
               </div>
             </div>
           </div>
@@ -120,37 +126,37 @@
             <div class="skills-top-right-container">
               <div class="skills-top-right-item">
                 <div>
-                  <img src="png/react-icon.png">
+                  <img src="/skills/techno-icons/react-icon.png" alt="ReactJs icon">
                   <h3>React</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
                 <div>
-                  <img src="png/typescript-icon.png">
+                  <img src="/skills/techno-icons/typescript-icon.png" alt="TypeScript icon">
                   <h3>TypeScript</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
                 <div>
-                  <img src="png/sass-icon.png">
+                  <img src="/skills/techno-icons/sass-icon.png"  alt="Sass icon">
                   <h3>Sass</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
                 <div>
-                  <img src="png/javascript-icon.png">
+                  <img src="/skills/techno-icons/javascript-icon.png" alt="JavaScript icon">
                   <h3>JavaScript</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
                 <div>
-                  <img src="png/html-icon.png">
+                  <img src="/skills/techno-icons/html-icon.png"  alt="html icon">
                   <h3>HTML5</h3>
                 </div>
               </div>
-              <div class="skills-top-right-item">
+              <div class="skills-top-right-item" alt="css icon">
                 <div>
-                  <img src="png/css-icon.png">
+                  <img src="/skills/techno-icons/css-icon.png">
                   <h3>CSS3</h3>
                 </div>
               </div>
@@ -162,35 +168,35 @@
             <h2>De nombreux outils...</h2>
             <div class="skills-bottom-left-list">
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/github-icon.png" />
+                <img src="/skills/tools-icons/github-icon.png" alt="Github icon">
                 <a href="https://github.com/" target="_blank">GitHub</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/figma-icon.png" />
+                <img src="/skills/tools-icons/figma-icon.png" alt="Figma icon">
                 <a href="https://figma.com/fr" target="_blank">Figma</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/zeplin-icon.png" />
+                <img src="/skills/tools-icons/zeplin-icon.png" alt="Zeplin icon">
                 <a href="https://zeplin.io/" target="_blank">Zeplin</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/notion-icon.png" />
+                <img src="/skills/tools-icons/notion-icon.png" alt="Notion icon">
                 <a href="https://www.notion.so/fr-fr" target="_blank">Notion</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/shortcut-icon.png" />
+                <img src="/skills/tools-icons/shortcut-icon.png" alt="Shortcut icon">
                 <a href="https://shortcut.com/" target="_blank">Shortcut</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/poeditor-icon.png" />
+                <img src="/skills/tools-icons/poeditor-icon.png" alt="POEditor icon">
                 <a href="https://poeditor.com/" target="_blank">POEditor</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/slack-icon.png" />
+                <img src="/skills/tools-icons/slack-icon.png" alt="Slack icon">
                 <a href="https://slack.com/intl/fr-fr/" target="_blank">Slack</a>
               </div>
               <div class="skills-bottom-left-item">
-                <img src="png/tools-icons/office-icon.png" />
+                <img src="/skills/tools-icons/office-icon.png" alt="Office icon">
                 <a href="https://www.microsoft.com/fr-fr/microsoft-365/microsoft-office" target="_blank">Pack Office</a>
               </div>
             </div>
@@ -222,16 +228,16 @@
               <button class="carousel-button next" data-carousel-button="next">➜</button>
               <ul data-slides>
                 <li class="carousel-slide" data-active>
-                  <img src="/realisations/SE/se-img1.png" alt="illustration SportEasy #1">
+                  <img src="/realisations/se/se-img1.png" alt="illustration SportEasy #1">
                 </li>
                 <li class="carousel-slide">
-                  <img src="/realisations/SE/se-img2.png" alt="illustration SportEasy #2">
+                  <img src="/realisations/se/se-img2.png" alt="illustration SportEasy #2">
                 </li>
                 <li class="carousel-slide">
-                  <img src="/realisations/SE/se-img3.png" alt="illustration SportEasy #3">
+                  <img src="/realisations/se/se-img3.png" alt="illustration SportEasy #3">
                 </li>
                 <li class="carousel-slide">
-                  <img src="/realisations/SE/se-img4.png" alt="illustration SportEasy #4">
+                  <img src="/realisations/se/se-img4.png" alt="illustration SportEasy #4">
                 </li>
               </ul>
             </div>
@@ -240,7 +246,7 @@
           <div class="realisations-top-text">
             <p>Travail réalisé chez SportEasy.</p>
             <p><span>HomeTeam ➜</span> refonte complète de la page d'accueil des équipes. Création de nouveaux composants, mise à jour de composants existants, responsive design, intégration des maquettes Zeplin.</p>
-            <p><span>Page des présences ➜</span> création d'une feature récapitulant les présences et la participations des joueurs aux divers évènements, matchs et tâches de l'équipe. Réflexion avec les développeurs back-end autour des nouvelles routes de l'API à déployer, création d'onglets, gestion et tri des colonnes, création de fixtures pour le développment, etc...</p>
+            <p><span>Page des présences ➜</span> création d'une feature récapitulant les présences et la participations des joueurs aux divers évènements, matchs et tâches de l'équipe. Réflexion avec les développeurs back-end autour des nouvelles routes de l'API à déployer, création d'onglets, gestion et tri des colonnes, création de fixtures pour le développement, etc...</p>
             <a href="https://demo.sporteasy.net/teams/" target="_blank">➜ Découvrir la web-app SportEasy</a>
           </div>
         </div>
@@ -252,19 +258,19 @@
               <button class="carousel-button next" data-carousel-button="next">➜</button>
               <ul data-slides>
                 <li class="carousel-slide bottom" data-active>
-                  <img src="/realisations/DSA/dsa-home.png" alt="illustration DartsScoringApp #1">
+                  <img src="/realisations/dsa/dsa-home.png" alt="illustration DartsScoringApp #1">
                 </li>
                 <li class="carousel-slide bottom">
-                  <img src="/realisations/DSA/dsa-scores.png" alt="illustration DartsScoringApp #2">
+                  <img src="/realisations/dsa/dsa-scores.png" alt="illustration DartsScoringApp #2">
                 </li>
               </ul>
             </div>
+            <!-- eo carousel -->
             <!-- pop-up image -->
             <div class="popup-img">
               <span></span>
               <img src="/realisations/DSA/dsa-home.png" alt="ilustrations full screen">
             </div>
-            <!-- eo carousel -->
           </div>
           <div class="realisations-bottom-text">
             <p>Projet personnel réalisé en autonomie, from scratch.</p>
@@ -282,21 +288,21 @@
         <div class="contact-content">
           <div class="contact-column left">
             <div class="contact-column-left-item">
-              <img src="svg/contact/envelope.svg">
+              <img src="/contact/envelope.svg" alt="envelope icon">
               <div class="contact-column-left-item-content">
                 <p>Par e-mail</p>
                 <a href="mailto:antoine.dupuy.jag@gmail.com" target="_blank">antoine.dupuy.jag@gmail.com</a>
               </div>
             </div>
             <div class="contact-column-left-item">
-              <img src="svg/contact/phone.svg">
+              <img src="/contact/phone.svg" alt="phone icon">
               <div class="contact-column-left-item-content">
                 <p>Sur mobile</p>
                 <a href="tel:+33676350641" target="_blank">+33 6 76 35 06 41</a>
               </div>
             </div>
             <div class="contact-column-left-item">
-              <img src="svg/contact/geo-alt.svg">
+              <img src="/contact/geo-alt.svg" alt="geo icon">
               <div class="contact-column-left-item-content">
                 <p>Ou suis-je ?</p>
                 <a href="https://www.google.fr/maps/place/Auneau,+28700+Auneau-Bleury-Saint-Symphorien/@48.3718113,0.4422224,6z/data=!4m5!3m4!1s0x47e43c25e7f97615:0x40dc8d705398920!8m2!3d48.4622839!4d1.773238" target="_blank">Auneau (28) - FRANCE</a>
@@ -304,19 +310,20 @@
             </div>
           </div>
           <div class="contact-column mid">
-            <div><img src="svg/contact/linkedin.svg"><a href="https://www.linkedin.com/in/antoine-dupuy-jag/" target="_blank">LinkedIn</a></div>
-            <div><img src="svg/contact/github.svg"><a href="https://github.com/AntoineDupuy-Jag" target="_blank">GitHub</a></div>
-            <div><img src="svg/contact/twitter.svg"><a href="" target="_blank">Twitter</a></div>
+            <div><img src="/contact/linkedin.svg"><a href="https://www.linkedin.com/in/antoine-dupuy-jag/" target="_blank">LinkedIn</a></div>
+            <div><img src="/contact/github.svg"><a href="https://github.com/AntoineDupuy-Jag" target="_blank">GitHub</a></div>
+            <div><img src="/contact/twitter.svg"><a href="" target="_blank">Twitter</a></div>
           </div>
           <div class="contact-column right">
-            <div><img src="svg/contact/file-earmark-person.svg"><a href="https://www.dropbox.com/s/jjfj0cv5ub8dqnl/CV_AntoineDUPUY-v3.pdf?dl=0" target="_blank">Mon CV</a></div>
-            <div><img src="svg/contact/file-bar-graph.svg"><a href="https://raspy-cobbler-02d.notion.site/Hello-This-is-Antoine-Dupuy-844dab1cd5584c4eac085d82534971a0" target="_blank">Ma page Notion</a></div>
-            <div><img src="svg/contact/file-pdf.svg"><a href="https://www.dropbox.com/s/0yjyyjtty0k0xbt/Rapport%20de%20stage%20SportEasy.pdf?dl=0" target="_blank">Rapport de stage SportEasy</a></div>
-            <div><img src="svg/contact/file-pdf.svg"><a href="https://www.dropbox.com/s/bigr4agwxy37qhe/REAC%20V2%20DWWM.pdf?dl=0" target="_blank">Référentiel titre Développeur web</a></div>
+            <div><img src="/contact/file-earmark-person.svg"><a href="https://www.dropbox.com/s/jjfj0cv5ub8dqnl/CV_AntoineDUPUY-v3.pdf?dl=0" target="_blank">Mon CV</a></div>
+            <div><img src="/contact/file-bar-graph.svg"><a href="https://raspy-cobbler-02d.notion.site/Hello-This-is-Antoine-Dupuy-844dab1cd5584c4eac085d82534971a0" target="_blank">Ma page Notion</a></div>
+            <div><img src="/contact/file-pdf.svg"><a href="https://www.dropbox.com/s/0yjyyjtty0k0xbt/Rapport%20de%20stage%20SportEasy.pdf?dl=0" target="_blank">Rapport de stage SportEasy</a></div>
+            <div><img src="/contact/file-pdf.svg"><a href="https://www.dropbox.com/s/bigr4agwxy37qhe/REAC%20V2%20DWWM.pdf?dl=0" target="_blank">Référentiel titre Développeur web</a></div>
           </div>
         </div>
       </div>
     </div>
+    <!---- FOOTER ---->
     <div class="footer">Made by <span>Qoophee©</span> aka Antoine DUPUY - 2021 / 2022</div>
   </body>
 </html>

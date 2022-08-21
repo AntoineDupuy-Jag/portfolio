@@ -1,3 +1,21 @@
+// --- Preloader ---
+
+const loader = document.querySelector('.preloader');
+window.addEventListener('load', vanish);
+
+function vanish() {
+	setTimeout(() => {
+		loader.style.display = 'none';
+	}, 1000);
+}
+
+// --- Navbar ---
+
+window.addEventListener('scroll', () => {
+	const navbar = document.querySelector('.navbar');
+	navbar.classList.toggle('sticky', window.scrollY > 0);
+});
+
 // --- Carousels ---
 
 const buttons = document.querySelectorAll('[data-carousel-button]');
