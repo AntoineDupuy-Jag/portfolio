@@ -212,14 +212,14 @@
   color: white;
   width: 30px;
   height: 30px;
-  background-image: url("/svg/rounded-cross.svg");
+  background-image: url("/general-assets/rounded-cross.svg");
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
   opacity: 0.8;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .popup-img span:hover {

@@ -4,6 +4,7 @@
 
 #home {
   background-image: linear-gradient( 360deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+  padding: 0 2rem;
 }
 
 .home-content {
@@ -60,4 +61,140 @@
 
 .home-right img {
   width: 60%;
+}
+
+/* Scroll arrow */
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-arrow p {
+  color: white;
+  text-shadow: 1px 1px 1px #383838;
+  font-style: italic;
+}
+
+.scroll-arrow > img {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-top: 2rem;
+  transform: rotateZ(90deg);
+  filter: drop-shadow(2px -2px 2px #383838);
+  animation: arrowSize 2s ease-in-out infinite;
+}
+
+.scroll-arrow::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  bottom: -16px;
+  left: 50%;
+  animation: shadowSize 2s ease-in-out infinite;
+}
+
+/* Arrow & shadow animation */
+
+@keyframes arrowSize {
+  0% {
+    transform: rotateZ(90deg) scale(1);
+  }
+  50% {
+    transform: rotateZ(90deg) scale(1.1) translateX(-12px);
+  }
+  100% {
+    transform: rotateZ(90deg) scale(1);
+  }
+}
+
+@keyframes shadowSize {
+  0% {
+    width: 24px;
+    height: 8px;
+    background-color: hsl(0, 0%, 22%);
+    transform: translate(-50%);
+  }
+  50% {
+    width: 54px;
+    height: 6px;
+    background-color: hsl(0, 0%, 42%);
+    transform: translate(-50%);
+  }
+  100% {
+    width: 24px;
+    height: 8px;
+    background-color: hsl(0, 0%, 22%);
+    transform: translate(-50%);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 1427px ) {
+  .home-left {
+    width: 70%;
+  }
+}
+
+@media (max-width: 960px ) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-left {
+    width: 100%;
+  }
+  .home-right {
+    width: 60%;
+    margin-top: 4rem;
+  }
+}
+
+@media(max-width: 630px) {
+  .svg-background {
+    display: none;
+  }
+  .svg-text {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    align-items: center;
+  }
+  .home-left {
+    height: 30%;
+    /* background-color: blue; */
+  }
+  .home-left div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-left div p {
+   text-align: center;
+  }
+  .home-left h1 {
+    font-size: 1.2rem;
+    line-height: auto;
+  }
+  .svg-text {
+    font-size: 1.2rem;
+  }
+  .home-right {
+    height: 30%;
+    margin-top: 0;
+    /* background-color: red; */
+  }
 }
