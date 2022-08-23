@@ -85,8 +85,29 @@ a:hover::before {
   }
 }
 
-/* COLORS */
+/* Responsive */
 
-/*  primary background -> #f99777
-    secondary background -> #623aa2
-*/
+@media (max-width: 416px) {
+  .page-transition-1 {
+    display: none;
+  }
+  .page-transition-2 {
+    display: none;
+  }
+  .page-transition-3 {
+    display: none;
+  }
+  .page-transition-4 {
+    display: none;
+  }
+  .footer {
+    padding: .4rem;
+    font-size: .8rem;
+  }
+}
+
+/* COLORS */
+  
+  /*  primary background -> #f99777
+      secondary background -> #623aa2
+  */

@@ -157,3 +157,78 @@
 .contact-column.right > div > a > span {
   color: #63c37b;
 }
+
+/* Responsive */
+
+@media (max-width: 1366px) {
+  #contact {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1256px) {
+  #contact {
+    height: auto;
+  }
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .contact-column {
+    width: 60%;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .contact-column::before {
+    position: absolute;
+    bottom: 40%;
+    transform: rotateZ(-90deg);
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: white;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+  .contact-column::before {
+    transform: none;
+  }
+  .contact-column.left::before {
+    top: -13%;
+    left: 5%;
+  }
+  .contact-column.mid::before {
+    top: -14%;
+    left: 5%;
+  }
+  .contact-column.right::before {
+    font-size: 3.2rem;
+    top: -8%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 788px) {
+  .contact-column {
+    width: 90%;
+  }
+}
+
+@media (max-width: 416px) {
+  #contact {
+    padding: 1rem .5rem;
+  }
+  .contact-column::before {
+    font-size: 2rem;
+  }
+  .contact-column.left::before {
+    top: -8%;
+  }
+  .contact-column.mid::before {
+    top: -9%;
+  }
+  .contact-column.right::before {
+    top: -6.5%;
+    font-size: 2rem;
+  }
+}

@@ -38,3 +38,25 @@
      transform: rotate(1turn);
   }
 }
+
+/* Responsive */
+
+@media (max-width: 788px) {
+  .preloader h1 {
+    font-size: 2rem;
+  }
+  .spinner {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 416px) {
+  .preloader h1 {
+    font-size: 1.5rem;
+  }
+  .spinner {
+    width: 48px;
+    height: 48px;
+  }
+}
