@@ -40,14 +40,27 @@ nav ul li:last-child {
   margin-right: 5rem;
 }
 
+/* --- Hamburger --- */
+
+.navbar-menu-btn {
+  display: none;
+  margin-right: 1rem;
+}
+
+.navbar-menu-btn img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
 /* --- Sticky --- */
 
 .navbar.sticky {
   background-color: hsl(0, 0%, 12%);
-  padding: 4px 0 4px 4px;
+  padding: .2rem 0;
 }
 
-.navbar.navbar.sticky img {
+.navbar.navbar.sticky > .navbar-left img {
   visibility: hidden;
 }
 
@@ -68,4 +81,42 @@ nav ul li:last-child {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Responsive */
+
+@media (max-width: 1366px) {
+  nav ul {
+    gap: 4rem;
+  }
+  nav ul li:last-child {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 1101px) {
+  nav ul {
+    gap: 2rem;
+  }
+  nav ul li:last-child {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 916px) {
+  .navbar.sticky .navbar-left span {
+    margin-left: -2rem;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 416px) {
+
 }
