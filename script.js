@@ -16,6 +16,20 @@ window.addEventListener('scroll', () => {
 	navbar.classList.toggle('sticky', window.scrollY > 0);
 });
 
+const toggleButton = document.getElementsByClassName('navbar-menu-btn')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+const links = document.querySelectorAll('.navbar-links a');
+
+toggleButton.addEventListener('click', () => {
+	navbarLinks.classList.toggle('active');
+});
+
+links.forEach((link) => {
+	link.addEventListener('click', () => {
+		navbarLinks.classList.remove('active');
+	});
+});
+
 // --- Carousels ---
 
 const buttons = document.querySelectorAll('[data-carousel-button]');

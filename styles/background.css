@@ -201,6 +201,9 @@
     padding: 1.5rem;
     height: auto;
   }
+  .background-title {
+    margin: 3rem auto 2rem auto;
+  }
   .background-top, .background-bottom {
     flex-direction: column;
     gap: 1rem;

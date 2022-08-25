@@ -154,8 +154,8 @@
     width: 100%;
   }
   .home-right {
-    width: 60%;
-    margin-top: 4rem;
+    width: 40%;
+    margin-top: 2rem;
   }
 }
 
@@ -165,6 +165,10 @@
   }
   .svg-text {
     margin-left: 0px;
+    font-size: 2rem;
+  }
+  .home-left h1 {
+    font-size: 2rem;
   }
 }
 
@@ -174,7 +178,6 @@
   }
   .home-left {
     height: 30%;
-    /* background-color: blue; */
   }
   .home-left div {
     display: flex;
@@ -195,6 +198,5 @@
   .home-right {
     height: 30%;
     margin-top: 0;
-    /* background-color: red; */
   }
 }

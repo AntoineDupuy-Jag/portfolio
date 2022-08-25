@@ -29,14 +29,14 @@
   margin-right: 0.8rem;
 }
 
-nav ul {
+.navbar-links {
   display: flex;
   align-items: center;
   gap: 5rem;
   list-style: none;
 }
 
-nav ul li:last-child {
+.navbar-links li:last-child {
   margin-right: 5rem;
 }
 
@@ -44,7 +44,12 @@ nav ul li:last-child {
 
 .navbar-menu-btn {
   display: none;
-  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: .85rem;
+  right: 1rem;
+  transition: all .3s ease;
 }
 
 .navbar-menu-btn img {
@@ -62,6 +67,10 @@ nav ul li:last-child {
 
 .navbar.navbar.sticky > .navbar-left img {
   visibility: hidden;
+}
+
+.navbar.navbar.navbar.sticky > .navbar-menu-btn {
+  top: .4rem;
 }
 
 .navbar.sticky span {
@@ -86,19 +95,19 @@ nav ul li:last-child {
 /* Responsive */
 
 @media (max-width: 1366px) {
-  nav ul {
+  .navbar-links {
     gap: 4rem;
   }
-  nav ul li:last-child {
+  .navbar-links li:last-child {
     margin-right: 2rem;
   }
 }
 
 @media (max-width: 1101px) {
-  nav ul {
+  .navbar-links {
     gap: 2rem;
   }
-  nav ul li:last-child {
+  .navbar-links li:last-child {
     margin-right: 1rem;
   }
 }
@@ -107,16 +116,37 @@ nav ul li:last-child {
   .navbar.sticky .navbar-left span {
     margin-left: -2rem;
   }
-  .navbar ul {
-    display: none;
-  }
   .navbar-menu-btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
-}
-
-@media (max-width: 416px) {
-
+  .navbar-links {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: hsl(0, 0%, 12%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    transition: all .3s ease;
+  }
+  .navbar-links.active {
+    left: 0;
+  }
+  .navbar-links li:last-child {
+    margin-left: 1rem;
+  }
+  .navbar-links a:hover {
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, hsl(15, 92%, 82%) -2.1%, hsl(263, 47%, 63%) 90%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navbar-links a::before {
+    content: none;
+  } 
 }
