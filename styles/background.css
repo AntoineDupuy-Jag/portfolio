@@ -182,6 +182,14 @@
   font-weight: bold;
 }
 
+.sport {
+  color: lightgray;
+}
+
+.easy {
+  color: #63c37b;
+}
+
 /* Responsive */
 
 @media (max-width: 1366px) {
