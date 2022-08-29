@@ -43,6 +43,8 @@ a:hover::before {
 .page-transition {
   height: 100px;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .page-transition-1 {

@@ -134,42 +134,42 @@
             <h2>‧ Top skills ‧</h2>
             <div class="skills-top-right-container">
               <div class="skills-top-right-item">
-                <div>
+                <div onclick="document.getElementById('react').style.display = 'flex'">
                     <img src="/skills/techno-icons/react-brands.svg" class="nb-icon" alt="ReactJs icon">
                     <img src="/skills/techno-icons/react-brands-color.svg" class="color-icon" alt="ReactJs icon">
                   <h3 style="--clr:#61dafb">React</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
-                <div>
+                <div onclick="document.getElementById('typescript').style.display = 'flex'">
                   <img src="/skills/techno-icons/typescript-brands.svg" class="nb-icon typescript" alt="TypeScript icon">
                   <img src="/skills/techno-icons/typescript-brands-color.svg" class="color-icon typescript" alt="TypeScript icon">
                   <h3 style="--clr:#3178c6">TypeScript</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
-                <div>
+                <div onclick="document.getElementById('sass').style.display = 'flex'">
                   <img src="/skills/techno-icons/sass-brands.svg" class="nb-icon" alt="Sass icon">
                   <img src="/skills/techno-icons/sass-brands-color.svg" class="color-icon" alt="Sass icon">
                   <h3 style="--clr:#cf649a">Sass</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
-                <div>
-                  <img src="/skills/techno-icons/square-js-brands.svg" class="nb-icon" alt="JavaScript icon">
-                  <img src="/skills/techno-icons/square-js-brands-color.svg" class="color-icon" alt="JavaScript icon">
+                <div onclick="document.getElementById('javascript').style.display = 'flex'">
+                  <img src="/skills/techno-icons/javascript-brands.svg" class="nb-icon javascript" alt="JavaScript icon">
+                  <img src="/skills/techno-icons/javascript-brands-color.svg" class="color-icon javascript" alt="JavaScript icon">
                   <h3 style="--clr:#efd81d">JavaScript</h3>
                 </div>
               </div>
               <div class="skills-top-right-item">
-                <div>
+                <div onclick="document.getElementById('html5').style.display = 'flex'">
                   <img src="/skills/techno-icons/html5-brands.svg" class="nb-icon" alt="html icon">
                   <img src="/skills/techno-icons/html5-brands-color.svg" class="color-icon" alt="html icon">
                   <h3 style="--clr:#e56027">HTML5</h3>
                 </div>
               </div>
               <div class="skills-top-right-item" alt="css icon">
-                <div>
+                <div onclick="document.getElementById('css3').style.display = 'flex'">
                   <img src="/skills/techno-icons/css3-alt-brands.svg" class="nb-icon" alt="css icon">
                   <img src="/skills/techno-icons/css3-alt-brands-color.svg" class="color-icon" alt="css icon">
                   <h3 style="--clr:#008ed1">CSS3</h3>
@@ -178,48 +178,108 @@
             </div>
           </div>
         </div>
+        <!-- Techno modals -->
+        <div id="react" class="techno-modal">
+          <div class="modal-content" style="--icon:url('/skills/techno-icons/react-brands-color.svg')">
+            <span class="close-button" onclick="document.getElementById('react').style.display = 'none'"></span>
+            <h1>React</h1>
+            <p>Framework (ou plutôt libraire 😉) sur lequel <span>j'ai le plus d'expérience et d'expertise.</span></p>
+            <p>Cela fait maintenant <span>1 an</span> que je développe quotidiennement sur React.</p>
+            <p>J'ai notamment travaillé sur React durant toute ma période en tant que développeur front-end chez SportEasy, <span>en développant de nouveaux composants</span> (réutilisables et responsives), selon les normes établis par le développeur front-end en charge de l'application web, et <span>en développant de nouvelles features, from scratch.</span></p>
+            <p>Librairies complémentaires sur lesquelles j'ai travaillé : Redux, react-router, Material UI, react-select...</p>
+            <a href="https://fr.reactjs.org/">www.reactjs.org</a>
+          </div>
+        </div>
+        <div id="typescript" class="techno-modal">
+          <div class="modal-content" style="--icon:url('/skills/techno-icons/typescript-brands-icon.svg')">
+            <span class="close-button" onclick="document.getElementById('typescript').style.display = 'none'"></span>
+            <h1>TypeScript</h1>
+            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
+            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
+            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+            <a href="https://www.typescriptlang.org/">www.typescriptlang.org</a>
+          </div>
+        </div>
+        <div id="sass" class="techno-modal">
+          <div class="modal-content" style="--icon:url('/skills/techno-icons/sass-brands-color.svg')">
+            <span class="close-button" onclick="document.getElementById('sass').style.display = 'none'"></span>
+            <h1>Sass</h1>
+            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
+            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
+            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+            <a href="https://sass-lang.com/">www.sass-lang.org</a>
+          </div>
+        </div>
+        <div id="javascript" class="techno-modal">
+          <div class="modal-content" style="--icon:url('/skills/techno-icons/javascript-brands-color.svg')">
+            <span class="close-button" onclick="document.getElementById('javascript').style.display = 'none'"></span>
+            <h1>JavaScript</h1>
+            <p>Le JavaScript a été l'un des premiers langages que j'ai abordé, après le Java et le C, qui m'ont permis d'acquérir les bases essentielles au développement informatique.</p>
+            <p>J'ai découvert le JavaScript via <span>Express</span>, un framework web NodeJs, spécialement utile pour le routing, la gestion de requêtes et la relation aux base de données. C'est donc sur du JavaScript orienté back-end que j'ai fait mes premiers pas sur ce langage.</p>
+            <p>Bien sûr, je me suis ensuite intéressé au JavaScript plus traditionnel, pour gérer les aspects front-end d'un site vitrine, en allant jusqu'aux frameworks JavaScript (principalement React).</p>
+            <a href="https://www.javascript.com/">www.javascript.com</a>
+          </div>
+        </div>
+        <div id="html5" class="techno-modal">
+          <div class="modal-content" style="--icon:url('/skills/techno-icons/html5-brands-color.svg')">
+            <span class="close-button" onclick="document.getElementById('html5').style.display = 'none'"></span>
+            <h1>HTML5</h1>
+            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
+            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
+            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+          </div>
+        </div>
+        <div id="css3" class="techno-modal">
+          <div class="modal-content" style="--icon:url('/skills/techno-icons/css3-alt-brands-color.svg')">
+            <span class="close-button" onclick="document.getElementById('css3').style.display = 'none'"></span>
+            <h1>CSS3</h1>
+            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
+            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
+            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+          </div>
+        </div>
         <div class="skills-bottom">
           <div class="skills-bottom-left">
             <h2>‧ Tools & softwares ‧</h2>
             <div class="skills-bottom-left-container">
               <ul>
-                <li style="--i:#040d21;--j:#033278;">
+                <li style="--i:#040d21;--j:#033278;" onclick="window.open('https://github.com/', '_blank')">
                 <span class="icon">
                   <img src="/skills/tools-icons/github-icon.png" alt="Github icon">
                 </span>
                 <span class="title">github</span>
                 </li>
-                <li style="--i: #a259ff;--j:#0acf83;">
+                <li style="--i: #a259ff;--j:#0acf83;" onclick="window.open('https://www.figma.com/fr/', '_blank')">
                   <span class="icon">
                     <img src="/skills/tools-icons/figma-icon.png" alt="Figma icon">
                   </span>
                   <span class="title">figma</span>
                 </li>
-                <li style="--i: #ee6723;--j:#fecf33;">
+                <li style="--i: #ee6723;--j:#fecf33;" onclick="window.open('https://zeplin.io/', '_blank')">
                   <span class="icon">
                     <img src="/skills/tools-icons/zeplin-icon.png" alt="Zeplin icon">
                   </span>
                   <span class="title">zeplin</span>
                 </li>
-                <li style="--i: #111111;--j:#383838;">
+                <li style="--i: #111111;--j:#383838;" onclick="window.open('https://www.notion.so/fr-fr', '_blank')">
                   <span class="icon">
                     <img src="/skills/tools-icons/notion-icon.png" alt="Notion icon">
                   </span>
                   <span class="title">notion</span>
                 </li>
-                <li style="--i: #58b1e4;--j:#452b5b;">
+                <li style="--i: #58b1e4;--j:#452b5b;" onclick="window.open('https://shortcut.com/', '_blank')">
                   <span class="icon">
                     <img src="/skills/tools-icons/shortcut-icon.png" alt="Shortcut icon">
                   </span>
                   <span class="title">shortcut</span>
                 </li>
-                <li style="--i: #24c1ce;--j:#ffda00;">
+                <li style="--i: #24c1ce;--j:#ffda00;" onclick="window.open('https://poeditor.com/', '_blank')">
                   <span class="icon">
                     <img src="/skills/tools-icons/poeditor-icon.png" alt="POEditor icon">
                   </span>
                   <span class="title">poeditor</span>
                 </li>
-                <li style="--i: #d51c55;--j:#e0a92c;">
+                <li style="--i: #d51c55;--j:#e0a92c;" onclick="window.open('https://slack.com/intl/fr-fr/', '_blank')">
                   <span class="icon">
                     <img src="/skills/tools-icons/slack-icon.png" alt="Slack icon">
                   </span>

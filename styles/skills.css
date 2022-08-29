@@ -91,6 +91,8 @@
   margin-bottom: 2rem;
 }
 
+/* Item top right & gauges animation on hover */
+
 .skills-top-right-item {
   width: calc((100% / 3) - (3 * 1rem));
 }
@@ -104,13 +106,13 @@
   transition: all .2s ease;
 }
 
-/* Gauge animation on hover */
-
 .skills-top-right-item h3 {
   position: relative;
   margin-left: .8rem;
-  font-weight: 300;
+  margin-bottom: 20px;
+  font-weight: 500;
   font-size: 1.4rem;
+  text-shadow: 1px 1px 1px black;
   color: var(--clr);
   cursor: pointer;
   transition: all .2s ease;
@@ -119,10 +121,10 @@
 .skills-top-right-item h3::before {
   content: '';
   position: absolute;
-  bottom: -14px;
-  left: -10px;
-  height: 8px;
-  width: calc(50% + 10px);
+  bottom: -21px;
+  left: -14px;
+  height: 12px;
+  width: calc(50% + 14px);
   border-bottom: 2px solid white;
   border-right: 2px solid white;
 }
@@ -130,7 +132,7 @@
 .skills-top-right-item h3::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -8px;
   left: 50%;
   transform: translate(-50%);
   height: 4px;
@@ -139,19 +141,27 @@
 }
 
 .skills-top-right-item div:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+}
+
+.skills-top-right-item div:hover h3::before {
+  animation: 0.5s colorCable linear forwards;
 }
 
 .skills-top-right-item div:hover h3::after {
   animation: 0.5s colorGauge linear forwards;
+  border-color: white;
+  transition-delay: 0.5s;
 }
 
 .skills-top-right-item div:hover .nb-icon {
-  animation: 1s iconDisappear linear forwards;
+  animation: 0.5s iconDisappear linear forwards;
+  animation-delay: 0.5s;
 }
 
 .skills-top-right-item div:hover .color-icon {
-  animation: 1s iconAppear linear forwards;
+  animation: 0.5s iconAppear linear forwards;
+  animation-delay: 0.5s;
 }
 
 .nb-icon {
@@ -169,7 +179,7 @@
   opacity: 0;
 }
 
-.typescript {
+.typescript, .javascript {
   transform: scale(0.85);
 }
 
@@ -198,6 +208,97 @@
   100% {
     border-width: 1px;
   }
+}
+
+@keyframes colorCable {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: var(--clr);
+  }
+}
+
+/* --- Techno Modal --- */
+
+.techno-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 50%;
+  background-color: white;
+  border-radius: 15px;
+  color: #383838;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding: 2rem;
+}
+
+.modal-content::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 1rem;
+  left: 2rem;
+  background: center no-repeat var(--icon);
+}
+
+.modal-content > .close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+  background: center no-repeat url('/general-assets/rounded-cross-dark.svg');
+  opacity: 0.8;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+.modal-content > .close-button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.modal-content h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.modal-content a {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: #623aa2;
+  text-decoration: underline;
+}
+
+.modal-content a:hover {
+  opacity: 0.6;
+}
+
+.modal-content span {
+  font-weight: bold;
 }
 
 /* --- BOTTOM --- */
