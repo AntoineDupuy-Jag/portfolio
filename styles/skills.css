@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 /* --- TITLE --- */
@@ -66,7 +67,7 @@
 
 .skills-top-left-item img {
   margin-right: 1rem;
-  width: 80px;
+  min-width: 80px;
   height: 60px;
 }
 
@@ -83,12 +84,24 @@
 }
 
 .skills-top-right h2 {
+  position: relative;
   font-size: 2rem;
   font-weight: 800;
   color: whitesmoke;
   text-shadow: 2px 2px 2px black;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.skills-top-right h2::before {
+  content: 'Cliquer pour en savoir plus !';
+  position: absolute;
+  bottom: -.8rem;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: .7rem;
+  font-weight: 300;
 }
 
 /* Item top right & gauges animation on hover */
@@ -236,13 +249,11 @@
 
 .modal-content {
   position: relative;
-  width: 50%;
+  width: 60%;
+  max-height: 90%;
   background-color: white;
   border-radius: 15px;
   color: #383838;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   padding: 2rem;
 }
 
@@ -301,6 +312,12 @@
   font-weight: bold;
 }
 
+.modal-content ul {
+  margin-left: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 /* --- BOTTOM --- */
 
 .skills-bottom {
@@ -311,7 +328,8 @@
 .skills-bottom-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
   width: calc(60% - 1rem);
   padding: 1.5rem 0 1.5rem 1.5rem;
@@ -322,21 +340,35 @@
 }
 
 .skills-bottom-left h2 {
+  position: relative;
   font-size: 2rem;
   font-weight: 800;
   color: #383838;
+  width: 100%;
+  text-align: center;
+}
+
+.skills-bottom-left h2::before {
+  content: 'Cliquer pour les découvrir !';
+  position: absolute;
+  bottom: -.8rem;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: .7rem;
+  font-weight: 300;
+  color: black;
 }
 
 .skills-bottom-left-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1.5rem;
 }
 
 .skills-bottom-left-container ul {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   z-index: 0;
 }
@@ -458,7 +490,7 @@
 }
 
 .skills-bottom-right h4 {
-  padding: 8px 16px;
+  padding: 8px 12px;
   text-align: center;
   background-color: white;
   border-radius: 20px;
@@ -513,7 +545,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
   }
   .skills-bottom-left-item {
     width: 50px;
@@ -537,10 +569,13 @@
   }
   .skills-top-left {
     border-right: none;
-    border-bottom: 1px solid #383838;
+    border-bottom: 1px solid white;
   }
   .skills-top-left-item h2 {
     font-size: 1.2rem;
+  }
+  .skills-bottom-left h2 {
+    font-size: 1.6rem;
   }
   .skills-top-right-item {
     width: auto;
@@ -550,10 +585,27 @@
     gap: 1rem;
   }
   .skills-bottom-left {
+    gap: 2rem;
     width: 100%;
   }
   .skills-bottom-right {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 80%;
+    padding: 1.5rem;
+  }
+  .modal-content a {
+    left: 1.5rem;
+  }
+  .modal-content h1 {
+    font-size: 1.5rem;
+  }
+  .modal-content::before {
+    left: 1.5rem;
   }
 }
 
@@ -569,5 +621,20 @@
   }
   .skills-top-left-item h2 {
     font-size: 1rem;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  .modal-content p, .modal-content a, .modal-content ul {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .skills-top-right h2::before {
+    font-size: .6rem;
+  }
+  .skills-bottom-left h2::before {
+    font-size: .6rem;
   }
 }

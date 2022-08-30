@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/general-assets/AD-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/preloader.css">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dea36efe0c.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="/script.js" defer></script>
     <title>Qoophee's website</title>
   </head>
   <body>
@@ -64,8 +64,8 @@
         </div>
       </div>
       <div class="scroll-arrow">
-        <p>Scroller pour explorer</p>
-        <img src="/general-assets/right-arrow-drawstyle.svg" alt="Arrow to indicate the scroll">
+        <p>Scroller pour explorer !</p>
+        <img src="/general-assets/right-arrow-drawstyle.svg" alt="Arrow to indicate the scroll" onclick="document.location.href='#background'">
       </div>
     </section>
     <div class="page-transition page-transition-1"></div>
@@ -119,7 +119,7 @@
               <img src="/skills/people-fill.svg">
               <div>
                 <h2>Travail d'équipe</h2>
-                <p>Méthode Agile et Scrum ‧ Communication ‧ Esprit d'équipe</p>
+                <p>Méthode Agile et Scrum ‧ Communication ‧ Adaptabilité</p>
               </div>
             </div>
             <div class="skills-top-left-item">
@@ -194,7 +194,7 @@
           <div class="modal-content" style="--icon:url('/skills/techno-icons/typescript-brands-icon.svg')">
             <span class="close-button" onclick="document.getElementById('typescript').style.display = 'none'"></span>
             <h1>TypeScript</h1>
-            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
+            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript.</p>
             <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
             <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
             <a href="https://www.typescriptlang.org/">www.typescriptlang.org</a>
@@ -204,9 +204,15 @@
           <div class="modal-content" style="--icon:url('/skills/techno-icons/sass-brands-color.svg')">
             <span class="close-button" onclick="document.getElementById('sass').style.display = 'none'"></span>
             <h1>Sass</h1>
-            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
-            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
-            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+            <p>Préprocesseur CSS, très performant et parfaitement adapté aux frameworks JavaScript.</p>
+            <p>Sass colle tout à fait à la logique de découpe par composant, de React notamment, et permet d'organiser une application de façon claire et structuré avec un fichier de style par composant, entre autres.</p>
+            <p>Options Sass avec lesquelles je travaille régulièrement :</p>
+            <ul>
+              <li>Mixins</li>
+              <li>Centralisation de variables</li>
+              <li>Fonctions et boucles</li>
+              <li>Empreintes et héritages</li>
+            </ul>
             <a href="https://sass-lang.com/">www.sass-lang.org</a>
           </div>
         </div>
@@ -224,18 +230,25 @@
           <div class="modal-content" style="--icon:url('/skills/techno-icons/html5-brands-color.svg')">
             <span class="close-button" onclick="document.getElementById('html5').style.display = 'none'"></span>
             <h1>HTML5</h1>
-            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
-            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
-            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+            <p>Bonne connaissance des différentes balises HTML, de leurs attributs, et des bonnes pratiques en vigeur pour des implémentations de qualité :</p>
+            <ul>
+              <li>Mise en page (regroupement par section, balises appropriées, etc... )</li>
+              <li>Notions en référencement (balises de titre, chemin absolus, attribut 'alt', etc...)</li>
+            </ul>
           </div>
         </div>
         <div id="css3" class="techno-modal">
           <div class="modal-content" style="--icon:url('/skills/techno-icons/css3-alt-brands-color.svg')">
             <span class="close-button" onclick="document.getElementById('css3').style.display = 'none'"></span>
             <h1>CSS3</h1>
-            <p>Langage que j'utilise sur presque chaque application, pour palier aux défauts du JavaScript</p>
-            <p>J'ai travaillé avec TypeScript durant toute ma période en tant que développeur front-end chez SportEasy, ce qui m'a permis de découvrir les forces de ce langage dans des applications plus complexes.</p>
-            <p>J'ai donc été amené à créer de nouveaux typages, respecter les types des données renvoyées par l'API, etc...</p>
+            <p>Notions CSS pratiquées (entre autres) :</p>
+            <ul>
+              <li>Flexbox</li>
+              <li>Breakpoints</li>
+              <li>Animations</li>
+              <li>Pseudo-éléments</li>
+              <li>Variables</li>
+            </ul>
           </div>
         </div>
         <div class="skills-bottom">
@@ -293,7 +306,7 @@
             <div>
               <h4>Esprit d'équipe</h4>
               <h4>Rigueur</h4>
-              <h4>Perséverance</h4>
+              <h4>Persévérance</h4>
               <h4>Autonomie</h4>
               <h4>Force de proposition</h4>
               <h4>Analyse</h4>
