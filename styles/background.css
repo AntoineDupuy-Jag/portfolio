@@ -251,6 +251,9 @@
   .background-top-right p {
     text-align: center;
   }
+  .background-top-right p:last-child {
+    margin: 0 auto;
+  }
   .box {
     width: 80%;
     height: 180px;

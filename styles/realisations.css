@@ -101,7 +101,7 @@
 .realisations-top-carousel::after, .realisations-bottom-carousel::after {
   position: absolute;
   content: "Cliquer sur l'image pour l'agrandir";
-  width: fit-content;
+  width: max-content;
   color: white;
   font-size: 0.7rem;
   font-style: italic;
